@@ -66,8 +66,12 @@ p {
 .hero h2 {
   position: absolute;
   bottom: 210px;
-  left: 660px;
+  left: 900px;
   background-color: #92CCCE;
   color: #31343D;
   padding: 5px;
+}
+
+main {
+  background-color: #EEEEF7;
 }
