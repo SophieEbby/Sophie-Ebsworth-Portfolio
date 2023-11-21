@@ -55,23 +55,58 @@ p {
   margin: 0;
 }
 
-.hero {
+.hero-image { /*Background image*/
   height: 300px;
   width: 100%;
+  position: relative;
   background-image: url(../images/me-graduation.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center; 
 }
 
-.hero h2 {
+.hero-text { /*Text on top of hero image in the bottom right corner*/
   position: absolute;
-  bottom: 210px;
-  left: 900px;
+  height:20%;
+  width:20%;
+  bottom: 25px;
+  right: 100px;
   background-color: #92CCCE;
   color: #31343D;
   padding: 5px;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  flex-direction: column;
 }
 
-main {
+.page-wrapper{ /*Setting the grid for the main section*/
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "TopLeft TopRight"
+  "MidLeft MidRight"
+  "BotLeft BotRight";
   background-color: #EEEEF7;
 }
+
+#about {
+  grid-area: TopLeft; /* Keep the About me heading in the TopLeft grid area */
+  display: grid;
+  justify-content: end;
+}
+
+#work{
+  grid-area: MidLeft; /* Keep the Work heading in the MidLeft grid area */
+  display: grid;
+  justify-content: end;
+}
+
+#contact{
+  grid-area: BotLeft; /* Keep the Contact heading in the BotLeft grid area */
+  display: grid;
+  justify-content: end;
+}
+
+
