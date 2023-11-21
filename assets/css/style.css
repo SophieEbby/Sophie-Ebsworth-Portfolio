@@ -36,12 +36,9 @@ header nav {
   float: right;
 }
 
-header nav ul {
+ul li {
   list-style-type: none;
   margin-right: 25px;
-}
-
-header nav ul li {
   display: inline-block;
   margin-left: 25px;
   font-size: 20px;
@@ -53,6 +50,8 @@ a {
 
 p {
   margin: 0;
+  padding: 20px;
+  color: #445877;
 }
 
 .hero-image { /*Background image*/
@@ -67,8 +66,8 @@ p {
 
 .hero-text { /*Text on top of hero image in the bottom right corner*/
   position: absolute;
-  height:20%;
-  width:20%;
+  height:25%;
+  width:35%;
   bottom: 25px;
   right: 100px;
   background-color: #92CCCE;
@@ -80,33 +79,25 @@ p {
   flex-direction: column;
 }
 
-.page-wrapper{ /*Setting the grid for the main section*/
+.page-section {
   display: grid;
-  grid-template-columns: 30% 70%;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 25% 1% 74%;
+  grid-template-rows: 1fr;
   grid-template-areas: 
-  "TopLeft TopRight"
-  "MidLeft MidRight"
-  "BotLeft BotRight";
+  "Left Right";
   background-color: #EEEEF7;
 }
 
-#about {
-  grid-area: TopLeft; /* Keep the About me heading in the TopLeft grid area */
+h2 {
+  grid-area: Left;
   display: grid;
   justify-content: end;
+  color: #445877;
+  padding: 5px;
+  font-size: 40px; 
 }
 
-#work{
-  grid-area: MidLeft; /* Keep the Work heading in the MidLeft grid area */
-  display: grid;
-  justify-content: end;
+.vl {
+  border-left: 4px solid #63738E;
+  height: 70px;
 }
-
-#contact{
-  grid-area: BotLeft; /* Keep the Contact heading in the BotLeft grid area */
-  display: grid;
-  justify-content: end;
-}
-
-
