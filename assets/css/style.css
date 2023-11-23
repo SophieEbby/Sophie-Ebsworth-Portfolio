@@ -53,7 +53,6 @@ nav a {
 
 p {
   margin: 0;
-  padding: 20px;
   color: #445877;
 }
 
@@ -72,7 +71,7 @@ p {
   /*Text on top of hero image in the bottom right corner*/
   position: absolute;
   height: 25%;
-  width: 35%;
+  width: 30%;
   bottom: 25px;
   right: 100px;
   background-color: #92CCCE;
@@ -84,13 +83,16 @@ p {
   flex-direction: column;
 }
 
+.page-wrapper {
+  background-color: #EEEEF7;
+}
 .page-section {
   display: grid;
   grid-template-columns: 25% 1% 74%;
   grid-template-rows: 1fr;
   grid-template-areas:
     "Left Right";
-  background-color: #EEEEF7;
+  padding: 20px;
 }
 
 h2 {
@@ -99,12 +101,11 @@ h2 {
   justify-content: end;
   color: #445877;
   padding: 5px;
-  font-size: 40px;
 }
 
 .vl {
-  border-left: 4px solid #63738E;
-  height: 70px;
+  border-left: 4px solid #445877;
+  height: auto;
 }
 
 #contact a {
@@ -114,75 +115,83 @@ h2 {
   border-bottom-width: 4px;
 }
 
+
 .work-section {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas:
     "Top Top"
     "Top Top"
     "Mid1 Mid2"
     "Bot1 Bot2";
-
 }
 
-#challenge1 {
+.challenge1 {
   grid-area: Top;
   background-image: url(../images/02-portfolio-1.jpg);
-  width: 1200px;
-  height: 400px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 5px;
-  border: solid 10px;
-
+  position: relative;
+  border: solid #92CCCE 5px;
+  margin: 8px;
+  height: 400px
 }
 
-#Application2 {
+.Application2 {
   grid-area: Mid1;
   background-image: url(../images/02-portfolio-2.jpg);
-  width: 600px;
-  height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 5px;
-  border: solid 10px;
+  border: solid #92CCCE 5px;
+  margin: 8px;
+  height: 200px;
 }
 
-#Application3 {
+.Application3 {
   grid-area: Mid2;
   background-image: url(../images/02-portfolio-3.jpg);
-  width: 600px;
-  height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 5px;
-  border: solid 10px;
+  border: solid #92CCCE 5px;
+  margin: 8px;
+  height: 200px;
 }
 
-#Application4 {
+.Application4 {
   grid-area: Bot1;
   background-image: url(../images/02-portfolio-4.jpg);
-  width: 600px;
-  height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 5px;
-  border: solid 10px;
+  border: solid #92CCCE 5px;
+  margin: 8px;
+  height: 200px;
 }
 
-#Application5 {
+.Application5 {
   grid-area: Bot2;
   background-image: url(../images/02-run-buddy.jpg);
-  width: 600px;
-  height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 5px;
-  border: solid 10px;
+  border: solid #92CCCE 5px;
+  margin: 8px;
+  height: 200px;
 }
+.text {
+  position: absolute;
+  bottom: 20px;
+  height: auto;
+  width: auto;
+  background-color: #92CCCE;
+  color: #31343D;
+  padding: 10px;
+  display: block;
+}
+
+
+
