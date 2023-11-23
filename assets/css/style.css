@@ -49,6 +49,7 @@ nav a {
   text-decoration: none;
   border-bottom: solid;
   border-bottom-width: 4px;
+  scroll-behavior: smooth;
 }
 
 p {
