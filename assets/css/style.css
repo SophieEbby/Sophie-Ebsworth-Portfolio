@@ -117,77 +117,54 @@ h2 {
 }
 
 
-.work-section {
+.work-section { /*Work section grid*/
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 400px 200px 200px ;
   grid-template-areas:
-    "Top Top"
     "Top Top"
     "Mid1 Mid2"
     "Bot1 Bot2";
+  gap: 10px;
 }
 
-.challenge1 {
+.challenge1 { 
   grid-area: Top;
-  background-image: url(../images/02-portfolio-1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   position: relative;
-  border: solid #92CCCE 5px;
-  margin: 8px;
-  height: 400px
+
 }
 
 .Application2 {
   grid-area: Mid1;
-  background-image: url(../images/02-portfolio-2.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   position: relative;
-  border: solid #92CCCE 5px;
-  margin: 8px;
-  height: 200px;
 }
 
 .Application3 {
   grid-area: Mid2;
-  background-image: url(../images/02-portfolio-3.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   position: relative;
-  border: solid #92CCCE 5px;
-  margin: 8px;
-  height: 200px;
 }
 
 .Application4 {
   grid-area: Bot1;
-  background-image: url(../images/02-portfolio-4.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   position: relative;
-  border: solid #92CCCE 5px;
-  margin: 8px;
-  height: 200px;
 }
 
 .Application5 {
   grid-area: Bot2;
-  background-image: url(../images/02-run-buddy.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   position: relative;
-  border: solid #92CCCE 5px;
-  margin: 8px;
-  height: 200px;
 }
-.text {
+
+.work-section a { /*Sets the boarder of each application box*/
+  border: solid #92CCCE 5px;
+}
+
+.work-section img { /*applis to all images in the work section*/
+  width: 100%; /* Image fill the container width */
+  height: 100%; /* Image fill the container height */
+  object-fit: cover; /* Maintain aspect ratio while covering the container */
+}
+
+.text { /*applies to the text class that holds the application text */
   position: absolute;
   bottom: 20px;
   height: auto;
@@ -197,6 +174,3 @@ h2 {
   padding: 10px;
   display: block;
 }
-
-
-
