@@ -7,9 +7,7 @@ This website is to showcase me to other people and businesses. It explains a lit
 
 There is a nav bar at the top of the page which is a way to navigate to the relvant sections (About Me, Work, Contact Me and a placeholder Resume Link)
 
-    ```md
-    ![alt text](assets/images/Portfolio.png)
-    ```
+    ![Screenshot of Portfolio page](assets/images/Portfolio.png)
 
 ## Credits
 
