@@ -1,29 +1,43 @@
-* {
+/*Global rule for all elements*/
+* { 
   box-sizing: border-box;
 }
 
-body {
+/*style rules for the body*/
+body { 
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
 
+/*header title rules*/
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6 { 
   margin: 0;
 }
 
-header {
+/*setting the rules for h2 across the page*/
+h2 {
+  grid-area: Left;
+  display: grid;
+  justify-content: end;
+  color: #445877;
+  padding: 5px;
+}
+
+/*setting the header rules*/
+header { 
   background-color: #31343D;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
+/*Setting the header h1 rules*/
 header h1 {
   display: inline-block;
   background-color: #92CCCE;
@@ -32,10 +46,12 @@ header h1 {
   padding-right: 10px;
 }
 
+/*Setting the header nav buttons to the right*/
 header nav {
   float: right;
 }
 
+/*setting the rules for the unordered lists across the page */
 ul li {
   list-style-type: none;
   margin-right: 25px;
@@ -44,6 +60,7 @@ ul li {
   font-size: 20px;
 }
 
+/*setting the rules for the nav links*/
 nav a {
   color: #92CCCE;
   text-decoration: none;
@@ -52,13 +69,14 @@ nav a {
   scroll-behavior: smooth;
 }
 
+/*setting the rules for paragraphs */
 p {
   margin: 0;
   color: #445877;
 }
 
+/*Setting the rules for Hero image*/
 .hero-image {
-  /*Background image*/
   height: 300px;
   width: 100%;
   position: relative;
@@ -68,8 +86,8 @@ p {
   background-position: center;
 }
 
+/*Setting the rules for the text on top of hero image in the bottom right corner*/
 .hero-text {
-  /*Text on top of hero image in the bottom right corner*/
   position: absolute;
   height: 25%;
   width: 30%;
@@ -84,9 +102,12 @@ p {
   flex-direction: column;
 }
 
+/*setting the rules for the page wrapper that is in the main*/
 .page-wrapper {
   background-color: #EEEEF7;
 }
+
+/*setting the page-section grid rules*/
 .page-section {
   display: grid;
   grid-template-columns: 25% 1% 74%;
@@ -96,28 +117,14 @@ p {
   padding: 20px;
 }
 
-h2 {
-  grid-area: Left;
-  display: grid;
-  justify-content: end;
-  color: #445877;
-  padding: 5px;
-}
-
+/*setting the rules for the vertical lines*/
 .vl {
   border-left: 4px solid #445877;
   height: auto;
 }
 
-#contact a {
-  color: #445877;
-  text-decoration: none;
-  border-bottom: solid;
-  border-bottom-width: 4px;
-}
-
-
-.work-section { /*Work section grid*/
+/*Setting the rules for Work section grid*/
+.work-section { 
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 400px 200px 200px ;
@@ -128,43 +135,51 @@ h2 {
   gap: 10px;
 }
 
+/*Setting the rules for challenge 1 area*/
 .challenge1 { 
   grid-area: Top;
   position: relative;
 
 }
 
+/*Setting the rules for Application 2 area*/
 .Application2 {
   grid-area: Mid1;
   position: relative;
 }
 
+/*Setting the rules for Application 3 area*/
 .Application3 {
   grid-area: Mid2;
   position: relative;
 }
 
+/*Setting the rules for Application 4 area*/
 .Application4 {
   grid-area: Bot1;
   position: relative;
 }
 
+/*Setting the rules for Application 5 area*/
 .Application5 {
   grid-area: Bot2;
   position: relative;
 }
 
-.work-section a { /*Sets the boarder of each application box*/
+/*Sets rules for the boarder of each application box*/
+.work-section a { 
   border: solid #92CCCE 5px;
 }
 
-.work-section img { /*applis to all images in the work section*/
-  width: 100%; /* Image fill the container width */
-  height: 100%; /* Image fill the container height */
-  object-fit: cover; /* Maintain aspect ratio while covering the container */
+/*Sets the rules to all images in the work section*/
+.work-section img { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
 }
 
-.text { /*applies to the text class that holds the application text */
+/*Sets the rules to the text class that holds the application text */
+.text { 
   position: absolute;
   bottom: 20px;
   height: auto;
@@ -173,4 +188,12 @@ h2 {
   color: #31343D;
   padding: 10px;
   display: block;
+}
+
+/*setting the rules for contact links*/
+#contact a {
+  color: #445877;
+  text-decoration: none;
+  border-bottom: solid;
+  border-bottom-width: 4px;
 }
